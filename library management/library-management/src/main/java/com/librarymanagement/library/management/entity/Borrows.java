@@ -11,7 +11,7 @@ public class Borrows {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer borrowId;
 
-    @Id
+    @Column(name="user_id")
     private Integer userId;
 
     @Column(name = "borrow_date")

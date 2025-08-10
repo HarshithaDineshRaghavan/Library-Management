@@ -23,7 +23,7 @@ public class Users {
     @Column(name = "password")
     private String password;
 
-    @Id
+    @Column(name="role_id")
     private Integer roleId;
 
     @OneToMany(cascade = CascadeType.REMOVE)

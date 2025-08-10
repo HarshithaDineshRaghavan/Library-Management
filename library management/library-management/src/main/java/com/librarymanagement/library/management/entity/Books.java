@@ -23,7 +23,7 @@ public class Books {
     @Column(name = "available_copies")
     private Integer availableCopies;
 
-    @Id
+    @Column(name="author_id")
     private Integer authorId;
 
     @Column(name = "genre")
