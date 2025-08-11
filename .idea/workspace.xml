@@ -4,18 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba26552f-0f06-4af5-9983-1043f25ff4b9" name="Changes" comment="" />
+    <list default="true" id="ba26552f-0f06-4af5-9983-1043f25ff4b9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/configuration/BootStrap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/library management/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/repository/RolesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/repository/RolesRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/controller/BooksController.class" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/controller/BooksController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/repository/RolesRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/repository/RolesRepository.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="30sPaoq9nHjimCPmZZvxx6lIlud" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -23,6 +41,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.LibraryManagementApplication.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
@@ -34,6 +53,37 @@
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="LibraryManagementApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.librarymanagement.library.management.LibraryManagementApplication" />
+      <module name="library-management" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.librarymanagement.library.management.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Library-Management" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Library-Management" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.LibraryManagementApplication" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="ba26552f-0f06-4af5-9983-1043f25ff4b9" name="Changes" comment="" />
