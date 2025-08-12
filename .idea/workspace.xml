@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba26552f-0f06-4af5-9983-1043f25ff4b9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/configuration/BootStrap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="ba26552f-0f06-4af5-9983-1043f25ff4b9" name="Changes" comment="1) bootstrap class added&#10;2) basic security configured">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library management/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/library management/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library management/library-management/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/repository/RolesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/repository/RolesRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library management/library-management/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library management/library-management/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/controller/BooksController.class" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/controller/BooksController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/repository/RolesRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/repository/RolesRepository.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,20 +32,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.LibraryManagementApplication.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "harshitha",
-    "last_opened_file_path": "D:/JAVA/Library-Management",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.LibraryManagementApplication.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;harshitha&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/JAVA/Library-Management&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="LibraryManagementApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.librarymanagement.library.management.LibraryManagementApplication" />
@@ -92,6 +85,19 @@
       <option name="presentableId" value="Default" />
       <updated>1754413373354</updated>
     </task>
+    <task id="LOCAL-00001" summary="1) bootstrap class added&#10;2) basic security configured">
+      <option name="closed" value="true" />
+      <created>1754931615389</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1754931615389</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1) bootstrap class added&#10;2) basic security configured" />
+    <option name="LAST_COMMIT_MESSAGE" value="1) bootstrap class added&#10;2) basic security configured" />
   </component>
 </project>
