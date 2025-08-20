@@ -17,8 +17,12 @@ public class Roles {
     @Column(name = "role")
     private String role;
 
-    @OneToMany
-    @JoinColumn(name = "role_id")
-    private List<Users> users = new ArrayList<>();
 
+
+    public Roles(){}
+
+    public Roles(String role, Integer roleId) {
+        this.role = role;
+        this.roleId = roleId;
+    }
 }

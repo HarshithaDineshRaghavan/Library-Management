@@ -5,9 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba26552f-0f06-4af5-9983-1043f25ff4b9" name="Changes" comment="1) bootstrap class added&#10;2) basic security configured">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/security/CustomDetailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/security/CustomRequestFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/security/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library management/library-management/src/main/resources/templates/add-user.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library management/library-management/src/main/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library management/library-management/src/main/resources/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/configuration/BootStrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/configuration/BootStrap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/entity/Roles.java" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/entity/Roles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/entity/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/entity/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/repository/UsersRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/repository/UsersRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/controller/BooksController.class" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/controller/BooksController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/entity/Roles.class" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/entity/Roles.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/entity/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/entity/Users.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/repository/UsersRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/repository/UsersRepository.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +31,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -35,11 +49,12 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Application.LibraryManagementApplication.executor&quot;: &quot;Run&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;harshitha&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;jeganWorkSpace&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/JAVA/Library-Management&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
