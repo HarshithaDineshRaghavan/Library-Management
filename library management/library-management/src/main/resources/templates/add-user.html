@@ -8,26 +8,18 @@
 <body>
 <div class="container mt-5">
   <h3>Add New User</h3>
-  <form th:action="@{/admin/users/add}" method="post" th:object="${user}">
+  <form th:action="@{/admin/user/save}" method="post">
     <div class="mb-3">
       <label class="form-label">Name</label>
-      <input type="text" th:field="*{name}" class="form-control" required>
+      <input type="text" name="name" class="form-control" required>
     </div>
     <div class="mb-3">
       <label class="form-label">Username</label>
-      <input type="text" th:field="*{userName}" class="form-control" required>
+      <input type="text" name="userName" class="form-control" required>
     </div>
     <div class="mb-3">
       <label class="form-label">Password</label>
-      <input type="password" th:field="*{password}" class="form-control" required>
-    </div>
-    <div class="mb-3">
-      <label class="form-label">Role</label>
-      <select th:field="*{roleId}" class="form-select" required>
-        <option th:each="role : ${roles}"
-                th:value="${role.roleId}"
-                th:text="${role.role}"></option>
-      </select>
+      <input type="password" name = "password" class="form-control" required>
     </div>
     <button type="submit" class="btn btn-success">Add User</button>
   </form>

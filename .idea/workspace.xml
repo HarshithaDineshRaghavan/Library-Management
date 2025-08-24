@@ -4,23 +4,61 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba26552f-0f06-4af5-9983-1043f25ff4b9" name="Changes" comment="1) bootstrap class added&#10;2) basic security configured">
-      <change afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/security/CustomDetailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/security/CustomRequestFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/security/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/security/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library management/library-management/src/main/resources/templates/add-user.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library management/library-management/src/main/resources/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library management/library-management/src/main/resources/templates/login.html" afterDir="false" />
+    <list default="true" id="ba26552f-0f06-4af5-9983-1043f25ff4b9" name="Changes" comment="basic security created and superUser created&#10;basic login page created">
+      <change afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/dto/BorrowRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/dto/UserRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/utils/LibraryUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/configuration/BootStrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/configuration/BootStrap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/entity/Roles.java" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/entity/Roles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/entity/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/entity/Users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/repository/UsersRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/repository/UsersRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/controller/BooksController.class" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/controller/BooksController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/entity/Roles.class" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/entity/Roles.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/entity/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/entity/Users.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/repository/UsersRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/repository/UsersRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/LibraryManagementApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/LibraryManagementApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/configuration/BootStrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/configuration/BootStrap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/controller/AuthorsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/controller/AuthorsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/controller/BooksController.java" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/controller/BooksController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/controller/BorrowsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/controller/BorrowsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/controller/RolesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/controller/RolesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/controller/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/controller/UsersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/entity/Authors.java" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/entity/Authors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/entity/Books.java" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/entity/Books.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/entity/Borrows.java" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/entity/Borrows.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/entity/Roles.java" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/entity/Roles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/entity/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/entity/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/repository/AuthorsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/repository/AuthorsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/repository/BooksRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/repository/BooksRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/repository/BorrowsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/repository/BorrowsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/repository/RolesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/repository/RolesRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/repository/UsersRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/repository/UsersRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/security/CustomDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/security/CustomDetailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/security/CustomRequestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/security/CustomRequestFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/security/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/security/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/service/AuthorsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/service/AuthorsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/service/BooksService.java" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/service/BooksService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/service/BorrowsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/service/BorrowsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/service/RolesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/service/RolesService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/library/management/service/UsersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/src/main/java/com/librarymanagement/service/UsersService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/src/main/resources/templates/add-user.html" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/src/main/resources/templates/add-user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/src/test/java/com/librarymanagement/library/management/LibraryManagementApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/library management/library-management/src/test/java/com/librarymanagement/LibraryManagementApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/LibraryManagementApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/controller/AuthorsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/controller/BooksController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/controller/BorrowsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/controller/RolesController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/controller/UsersController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/entity/Authors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/entity/Books.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/entity/Borrows.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/entity/Roles.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/entity/Users.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/repository/AuthorsRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/repository/BooksRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/repository/BorrowsRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/repository/RolesRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/repository/UsersRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/service/AuthorsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/service/BooksService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/service/BorrowsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/service/RolesService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library management/library-management/target/classes/com/librarymanagement/library/management/service/UsersService.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +68,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -46,28 +84,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.LibraryManagementApplication.executor&quot;: &quot;Run&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;jeganWorkSpace&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/JAVA/Library-Management&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.LibraryManagementApplication.executor": "Run",
+    "Application.com.librarymanagement.LibraryManagementApplication.executor": "Run",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "jeganWorkSpace",
+    "last_opened_file_path": "D:/JAVA/Library-Management",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RunManager" selected="Application.com.librarymanagement.LibraryManagementApplication">
     <configuration name="LibraryManagementApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.librarymanagement.library.management.LibraryManagementApplication" />
       <module name="library-management" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.librarymanagement.library.management.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.librarymanagement.LibraryManagementApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.librarymanagement.LibraryManagementApplication" />
+      <module name="library-management" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.librarymanagement.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -88,6 +140,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.librarymanagement.LibraryManagementApplication" />
         <item itemvalue="Application.LibraryManagementApplication" />
       </list>
     </recent_temporary>
@@ -108,11 +161,20 @@
       <option name="project" value="LOCAL" />
       <updated>1754931615389</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="basic security created and superUser created&#10;basic login page created">
+      <option name="closed" value="true" />
+      <created>1755704011595</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1755704011595</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1) bootstrap class added&#10;2) basic security configured" />
-    <option name="LAST_COMMIT_MESSAGE" value="1) bootstrap class added&#10;2) basic security configured" />
+    <MESSAGE value="basic security created and superUser created&#10;basic login page created" />
+    <option name="LAST_COMMIT_MESSAGE" value="basic security created and superUser created&#10;basic login page created" />
   </component>
 </project>
