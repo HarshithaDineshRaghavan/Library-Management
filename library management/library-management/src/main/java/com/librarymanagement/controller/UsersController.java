@@ -5,7 +5,10 @@ import com.librarymanagement.entity.Users;
 import com.librarymanagement.service.UsersService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @Controller
 @RequestMapping("/admin/user/")
@@ -35,6 +38,31 @@ public class UsersController {
     public String addUser(@ModelAttribute  UserRequest userRequest){
         usersService.saveUser(userRequest);
         return "home";
+    }
+    @GetMapping("/list")
+    public String listAllUsers(Model model){
+        List<Users> users = usersService.getAllUsers();
+        model.addAttribute("users", users);
+        return "list-users";
+    }
+    @GetMapping("/delete/{id}")
+    public String deleteUser(@PathVariable Integer id) {
+        usersService.deleteUser(id);
+        return "redirect:/admin/user/list";
+    }
+
+    @GetMapping("/edit/{id}")
+    public String editUser(@PathVariable Integer id, Model model) {
+        Users user = usersService.getUserById(id)
+                .orElseThrow(() -> new IllegalArgumentException("Invalid user Id:" + id));
+        model.addAttribute("user", user);
+        return "edit-user";
+    }
+
+    @PostMapping("/update/{id}")
+    public String updateUser(@PathVariable Integer id, @ModelAttribute Users user) {
+        usersService.updateUser(id, user);
+        return "redirect:/admin/user/list";
     }
 }
 
