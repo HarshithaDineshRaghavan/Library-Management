@@ -1,0 +1,105 @@
+<div th:fragment="sidebar">
+  <nav class="sidebar sidebar-offcanvas" id="sidebar">
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/home}">
+          <i class="mdi mdi-home menu-icon"></i>
+          <span class="menu-title">Dashboard</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="collapse" href="#ui-user" aria-expanded="false" aria-controls="ui-user">
+          <i class="mdi mdi-account menu-icon"></i>
+          <span class="menu-title">Users</span>
+          <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="ui-user">
+          <ul class="nav flex-column sub-menu">
+            <li class="nav-item"> <a class="nav-link" th:href="@{/admin/user/addUser}">Add</a></li>
+            <li class="nav-item"> <a class="nav-link" th:href="@{/admin/user/list}">View</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+          <i class="mdi mdi-circle-outline menu-icon"></i>
+          <span class="menu-title">UI Elements</span>
+          <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="ui-basic">
+          <ul class="nav flex-column sub-menu">
+            <li class="nav-item"> <a class="nav-link" th:href="@{/admin/pages/ui-features/buttons}">Buttons</a></li>
+            <li class="nav-item"> <a class="nav-link" th:href="@{/admin/pages/ui-features/dropdowns}">Dropdowns</a></li>
+            <li class="nav-item"> <a class="nav-link" th:href="@{/admin/pages/ui-features/typography}">Typography</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="collapse" href="#form-elements" aria-expanded="false"
+          aria-controls="form-elements">
+          <i class="mdi mdi-view-headline menu-icon"></i>
+          <span class="menu-title">Form elements</span>
+          <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="form-elements">
+          <ul class="nav flex-column sub-menu">
+            <li class="nav-item"><a class="nav-link" th:href="@{/admin/pages/forms/basic_elements}">Basic Elements</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
+          <i class="mdi mdi-chart-pie menu-icon"></i>
+          <span class="menu-title">Charts</span>
+          <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="charts">
+          <ul class="nav flex-column sub-menu">
+            <li class="nav-item"> <a class="nav-link" th:href="@{/admin/pages/charts/chartjs}">ChartJs</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
+          <i class="mdi mdi-grid-large menu-icon"></i>
+          <span class="menu-title">Tables</span>
+          <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="tables">
+          <ul class="nav flex-column sub-menu">
+            <li class="nav-item"> <a class="nav-link" th:href="@{/admin/pages/tables/basic-table}">Basic table</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
+          <i class="mdi mdi-emoticon menu-icon"></i>
+          <span class="menu-title">Icons</span>
+          <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="icons">
+          <ul class="nav flex-column sub-menu">
+            <li class="nav-item"> <a class="nav-link" th:href="@{/admin/pages/icons/font-awesome}">Font Awesome</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+          <i class="mdi mdi-account menu-icon"></i>
+          <span class="menu-title">Sample Pages</span>
+          <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="auth">
+          <ul class="nav flex-column sub-menu">
+            <li class="nav-item"> <a class="nav-link" th:href="@{/admin/pages/samples/blank-page}"> Blank Page </a></li>
+            <li class="nav-item"> <a class="nav-link" th:href="@{/admin/pages/samples/error-404}"> 404 </a></li>
+            <li class="nav-item"> <a class="nav-link" th:href="@{/admin/pages/samples/error-500}"> 500 </a></li>
+            <li class="nav-item"> <a class="nav-link" th:href="@{/admin/pages/samples/login}"> Login </a></li>
+            <li class="nav-item"> <a class="nav-link" th:href="@{/admin/pages/samples/register}"> Register </a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</div>
