@@ -35,22 +35,7 @@ public class UsersService {
         return usersRepository.findById(id);
     }
 
-    public Users saveUser(UserRequest userRequest) {
-        // check if username already exists
-        Optional<Users> existingUser = usersRepository.findByUserName(userRequest.getUserName());
-        if (existingUser.isPresent()) {
-            throw new UserAlreadyExistsException("Username already exists");
-        }
 
-        Users user = libraryUtils.mapDtoEntity(userRequest);
-
-        Roles roles = rolesRepository.findFirstByRole("user");
-        if (roles != null) {
-            user.setRoles(Set.of(roles));
-        }
-
-        return usersRepository.save(user);
-    }
     public List<Users> getAllUsers(){
         return usersRepository.findAll();
     }
@@ -72,5 +57,22 @@ public class UsersService {
     public List<Roles> getAllRoles() {
         return rolesRepository.findAll();
     }
+    public Users saveUser(UserRequest userRequest) {
+        Optional<Users> existingUser = usersRepository.findByUserName(userRequest.getUserName());
+        if (existingUser.isPresent()) {
+            throw new UserAlreadyExistsException("Username already exists");
+        }
+
+        Users user = libraryUtils.mapDtoEntity(userRequest);
+
+        Roles role = rolesRepository.findById(userRequest.getRoleId())
+                .orElseThrow(() -> new IllegalArgumentException("Invalid role ID"));
+        user.setRoles(Set.of(role));
+        user.setRoleId(role.getRoleId());
+
+
+        return usersRepository.save(user);
+    }
+
 
 }
