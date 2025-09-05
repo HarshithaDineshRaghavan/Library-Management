@@ -12,11 +12,14 @@
     <label>Username:</label>
     <input type="text" th:field="*{userName}" th:placeholder="${user.userName}" /><br><br>
 
-    <label>Password:</label>
-    <input type="password" th:field="*{password}" th:placeholder="${user.password}" /><br><br>
-
     <label>Role ID:</label>
-    <input type="text" th:field="*{roleId}" th:placeholder="${user.roleId}" /><br><br>
+    <select th:field="*{roleId}">
+        <option th:each="r : ${roles}"
+                th:value="${r.roleId}"
+                th:text="${r.roleId}"
+                th:selected="${r.roleId} == ${user.roleId}">
+        </option>
+    </select><br><br>
 
     <button type="submit">Save</button>
 </form>

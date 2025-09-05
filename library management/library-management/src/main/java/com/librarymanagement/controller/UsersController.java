@@ -1,6 +1,8 @@
 package com.librarymanagement.controller;
 
 import com.librarymanagement.dto.UserRequest;
+import com.librarymanagement.entity.Authors;
+import com.librarymanagement.entity.Roles;
 import com.librarymanagement.entity.Users;
 import com.librarymanagement.service.UsersService;
 import org.springframework.http.ResponseEntity;
@@ -56,8 +58,14 @@ public class UsersController {
         Users user = usersService.getUserById(id)
                 .orElseThrow(() -> new IllegalArgumentException("Invalid user Id:" + id));
         model.addAttribute("user", user);
+
+        List<Roles> roles = usersService.getAllRoles();
+        model.addAttribute("roles", roles);
+
+
         return "edit-user";
     }
+
 
     @PostMapping("/update/{id}")
     public String updateUser(@PathVariable Integer id, @ModelAttribute Users user) {
@@ -65,5 +73,7 @@ public class UsersController {
         return "redirect:/admin/user/list";
     }
 }
+
+
 
 

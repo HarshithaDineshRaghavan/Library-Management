@@ -1,10 +1,13 @@
 package com.librarymanagement.service;
 
 import com.librarymanagement.dto.UserRequest;
+import com.librarymanagement.entity.Authors;
 import com.librarymanagement.entity.Roles;
 import com.librarymanagement.entity.Users;
+import com.librarymanagement.exception.UserAlreadyExistsException;
 import com.librarymanagement.repository.RolesRepository;
 import com.librarymanagement.repository.UsersRepository;
+import com.librarymanagement.repository.AuthorsRepository;
 import com.librarymanagement.utils.LibraryUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -32,14 +35,21 @@ public class UsersService {
         return usersRepository.findById(id);
     }
 
-    public Users saveUser(UserRequest userRequest){
+    public Users saveUser(UserRequest userRequest) {
+        // check if username already exists
+        Optional<Users> existingUser = usersRepository.findByUserName(userRequest.getUserName());
+        if (existingUser.isPresent()) {
+            throw new UserAlreadyExistsException("Username already exists");
+        }
+
         Users user = libraryUtils.mapDtoEntity(userRequest);
+
         Roles roles = rolesRepository.findFirstByRole("user");
-        if(roles != null){
+        if (roles != null) {
             user.setRoles(Set.of(roles));
         }
-        user = usersRepository.save(user);
-        return user;
+
+        return usersRepository.save(user);
     }
     public List<Users> getAllUsers(){
         return usersRepository.findAll();
@@ -58,6 +68,9 @@ public class UsersService {
         user.setRoleId(updatedUser.getRoleId());
 
         return usersRepository.save(user);
+    }
+    public List<Roles> getAllRoles() {
+        return rolesRepository.findAll();
     }
 
 }
